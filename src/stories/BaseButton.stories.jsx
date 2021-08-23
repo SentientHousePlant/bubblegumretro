@@ -6,13 +6,13 @@ export default {
 };
 
 export const Default = () => (
-  <BaseButton>
+  <BaseButton onClick={() => alert("Clicked!")}>
     <h1 style={{ margin: "0px" }}>Button</h1>
   </BaseButton>
 );
 
 export const Tight = () => (
-  <BaseButton tight>
+  <BaseButton tight onClick={() => alert("Clicked!")}>
     <h1 style={{ margin: "0px" }}>Button</h1>
   </BaseButton>
 );
