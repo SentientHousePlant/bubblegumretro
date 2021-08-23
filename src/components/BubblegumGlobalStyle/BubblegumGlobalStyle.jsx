@@ -9,7 +9,11 @@ const GlobalStyle = createGlobalStyle`
     --neutral-blue: #F3FEFF;
     --text-color-dark: #170E1B;
     --highlight-color: #ED7D3A;
-    --drop-shadow-amount: 10px;
+    --drop-shadow-amount: 3px;
+    --border-size: 1px;
+  }
+  * {
+  box-sizing: border-box;
   }
 `;
 

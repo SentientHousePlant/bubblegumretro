@@ -5,5 +5,14 @@ export default {
   title: "Components/BaseButton",
 };
 
-export const Primary = () => <BaseButton>Button</BaseButton>;
-export const Second = () => <BaseButton>Buttosn</BaseButton>;
+export const Default = () => (
+  <BaseButton>
+    <p>Button</p>
+  </BaseButton>
+);
+
+export const Tight = () => (
+  <BaseButton tight>
+    <p>Button</p>
+  </BaseButton>
+);

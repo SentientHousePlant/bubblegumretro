@@ -10,13 +10,21 @@ const RawBaseButton = (props) => {
 
 const StyledBaseButton = styled(RawBaseButton)`
   background-color: var(--primary-color);
-  border: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: var(--text-color-dark);
+  border: var(--border-size) solid var(--text-color-dark);
+  box-shadow: calc(-1 * var(--drop-shadow-amount)) var(--drop-shadow-amount) 0px
+    var(--secondary-dark);
+  min-width: 50px;
+  min-height: 35px;
   :active {
     box-shadow: none;
-    transform: translateY(5px) translateX(-5px);
+    transform: translateY(var(--drop-shadow-amount))
+      translateX(calc(-1 * var(--drop-shadow-amount)));
   }
   & > * {
-    padding: 0.2rem;
+    ${(props) => (props.tight ? "padding: 0rem;" : "padding: 0.2rem 0.4rem;")}
   }
 `;
 
