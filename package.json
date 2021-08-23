@@ -1,0 +1,10 @@
+{
+  "name": "bubblegumretro",
+  "version": "1.0.0",
+  "description": "A whimsical UI library.",
+  "main": "index.js",
+  "repository": "https://github.com/SentientHousePlant/bubblegumretro",
+  "author": "J Harrington",
+  "license": "Unlicense",
+  "private": false
+}
