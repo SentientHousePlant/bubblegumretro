@@ -9,7 +9,7 @@ const RawBaseButton = (props) => {
 };
 
 const StyledBaseButton = styled(RawBaseButton)`
-  background-color: hotpink;
+  background-color: var(--primary-color);
   border: none;
   :active {
     box-shadow: none;
