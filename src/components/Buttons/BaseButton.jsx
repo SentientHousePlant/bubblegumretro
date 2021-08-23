@@ -24,7 +24,7 @@ const StyledBaseButton = styled(RawBaseButton)`
       translateX(calc(-1 * var(--drop-shadow-amount)));
   }
   & > * {
-    ${(props) => (props.tight ? "padding: 0rem;" : "padding: 0.2rem 0.4rem;")}
+    ${(props) => (props.tight ? "padding: 0rem;" : "padding: 0.4rem 0.8rem;")}
   }
 `;
 

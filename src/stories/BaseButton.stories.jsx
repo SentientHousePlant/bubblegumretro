@@ -7,12 +7,12 @@ export default {
 
 export const Default = () => (
   <BaseButton>
-    <p>Button</p>
+    <h1 style={{ margin: "0px" }}>Button</h1>
   </BaseButton>
 );
 
 export const Tight = () => (
   <BaseButton tight>
-    <p>Button</p>
+    <h1 style={{ margin: "0px" }}>Button</h1>
   </BaseButton>
 );
