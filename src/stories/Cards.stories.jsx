@@ -2,9 +2,9 @@ import Card from "../components/Card/Card";
 
 export default {
   component: Card,
-  title: "Components/Card",
+  title: "Components/Cards",
 };
 
-export const Default = () => {
-  <Card></Card>;
+export const Main = () => {
+  return <Card>Test</Card>;
 };

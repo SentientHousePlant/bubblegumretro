@@ -1,5 +1,13 @@
-const CardContent = () => {
-  return <div></div>;
+import styled from "styled-components";
+
+const CardContent = (props) => {
+  return <div className={props.className}>Content</div>;
 };
 
-export default CardContent;
+const StyledCardContent = styled(CardContent)`
+  height: 50px;
+  width: 100px;
+  background-color: var(--secondary-color);
+`;
+
+export default StyledCardContent;
