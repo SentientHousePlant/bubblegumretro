@@ -14,6 +14,8 @@ const GlobalStyle = createGlobalStyle`
   }
   * {
   box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   }
 `;
 
