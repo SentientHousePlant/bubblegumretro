@@ -2,17 +2,13 @@ import styled from "styled-components";
 import CardContent from "./CardContent";
 
 const Card = (props) => {
-  return (
-    <div className={props.className}>
-      <CardContent>Hello</CardContent>
-    </div>
-  );
+  return <div className={props.className}>{props.children}</div>;
 };
 
 const StyledCard = styled(Card)`
   min-width: 200px;
   min-height: 300px;
-  width: 20%;
+  width: 40%;
   height: 40%;
   box-shadow: calc(-1 * var(--drop-shadow-amount)) var(--drop-shadow-amount) 0px
     var(--secondary-dark);
