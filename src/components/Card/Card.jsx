@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { layout } from "styled-system";
+import { layout, background, border } from "styled-system";
 
 const Card = (props) => {
   return <div className={props.className}>{props.children}</div>;
@@ -19,6 +19,14 @@ const StyledCard = styled(Card)`
     transform: translateY(0%);
   }
   ${layout}
+  ${background}
+  ${border}
 `;
+
+StyledCard.defaultProps = {
+  borderRadius: 3,
+  width: "50%",
+  height: "50%",
+};
 
 export default StyledCard;

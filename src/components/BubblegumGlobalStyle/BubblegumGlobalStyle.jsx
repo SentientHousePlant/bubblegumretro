@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
     --highlight-color: #ED7D3A;
     --drop-shadow-amount: 3px;
     --border-size: 1px;
+    --border-radius: 3px;
   }
   * {
   box-sizing: border-box;

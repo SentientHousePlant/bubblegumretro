@@ -1,31 +1,35 @@
 import { template } from "lodash";
 import Card from "../components/Card/Card";
-import CardContent from "../components/Card/CardContent";
+import CardSlideUp from "../components/Card/CardSlideUp";
 
 export default {
   component: Card,
   title: "Components/Cards",
 };
 
-const Template = (args) => (
+const SlideTemplate = (args) => (
   <div style={{ width: "400px", height: "400px" }}>
     <Card {...args}>
-      <CardContent {...args}>
+      <CardSlideUp {...args}>
         <h1>Heelo</h1>
         <p>
           fgjodfjgjd jdfj djfgk jdkfgnkdj ngkndf knkdfng kdnfg kndfkgn dkfng jk
         </p>
-      </CardContent>
+      </CardSlideUp>
     </Card>
   </div>
 );
 
-export const Default = Template.bind({});
+export const Default = SlideTemplate.bind({});
 
 Default.args = {
   shadow: true,
   slideup: true,
   roundedcorner: false,
-  width: "30%",
-  height: "30%",
+  width: "50%",
+  height: "50%",
+  backgroundImage:
+    "url(https://upload.wikimedia.org/wikipedia/commons/a/a8/ESO_577-24_FORS2_VLT.jpg)",
+  backgroundPosition: "center",
+  borderRadius: 3,
 };

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { space } from "styled-system";
+import { border } from "styled-system";
 
 const RawBaseButton = (props) => {
   return (
@@ -24,7 +24,11 @@ const StyledBaseButton = styled(RawBaseButton)`
     transform: translateY(var(--drop-shadow-amount))
       translateX(calc(-1 * var(--drop-shadow-amount)));
   }
-  ${space}
+  ${border}
 `;
+
+StyledBaseButton.defaultProps = {
+  borderRadius: 3,
+};
 
 export default StyledBaseButton;

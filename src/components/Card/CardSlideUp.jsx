@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const CardContent = (props) => {
+const CardSlideUp = (props) => {
   return <div className={props.className}>{props.children}</div>;
 };
 
-const StyledCardContent = styled(CardContent)`
+const StyledCardSlideUp = styled(CardSlideUp)`
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -21,4 +21,4 @@ const StyledCardContent = styled(CardContent)`
   ${(props) => props.slideup && "transform: translateY(calc(55%));"}
 `;
 
-export default StyledCardContent;
+export default StyledCardSlideUp;
