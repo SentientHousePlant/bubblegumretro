@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { space } from "styled-system";
 
 const RawBaseButton = (props) => {
   return (
@@ -23,9 +24,7 @@ const StyledBaseButton = styled(RawBaseButton)`
     transform: translateY(var(--drop-shadow-amount))
       translateX(calc(-1 * var(--drop-shadow-amount)));
   }
-  & > * {
-    ${(props) => (props.tight ? "padding: 0rem;" : "padding: 0.4rem 0.8rem;")}
-  }
+  ${space}
 `;
 
 export default StyledBaseButton;

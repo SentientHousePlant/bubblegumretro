@@ -18,7 +18,7 @@ const StyledCardContent = styled(CardContent)`
   border-top: var(--border-size) solid var(--text-color-dark);
   border-width: 1px 0px 0px 1px;
   background: var(--secondary-light);
-  ${(props) => props.slideup && "transform: translateY(calc(65%));"}
+  ${(props) => props.slideup && "transform: translateY(calc(55%));"}
 `;
 
 export default StyledCardContent;

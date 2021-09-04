@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import CardContent from "./CardContent";
+import { layout } from "styled-system";
 
 const Card = (props) => {
   return <div className={props.className}>{props.children}</div>;
 };
 
 const StyledCard = styled(Card)`
-  min-width: 200px;
-  min-height: 300px;
   width: 40%;
   height: 40%;
   box-shadow: calc(-1 * var(--drop-shadow-amount)) var(--drop-shadow-amount) 0px
@@ -20,6 +18,7 @@ const StyledCard = styled(Card)`
   :hover > * {
     transform: translateY(0%);
   }
+  ${layout}
 `;
 
 export default StyledCard;

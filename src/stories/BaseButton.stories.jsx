@@ -10,9 +10,3 @@ export const Default = () => (
     <h1 style={{ margin: "0px" }}>Button</h1>
   </BaseButton>
 );
-
-export const Tight = () => (
-  <BaseButton tight onClick={() => alert("Clicked!")}>
-    <h1 style={{ margin: "0px" }}>Button</h1>
-  </BaseButton>
-);
