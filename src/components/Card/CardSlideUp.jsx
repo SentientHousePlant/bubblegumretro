@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { space } from "styled-system";
 
 const CardSlideUp = (props) => {
   return <div className={props.className}>{props.children}</div>;
@@ -19,6 +20,7 @@ const StyledCardSlideUp = styled(CardSlideUp)`
   border-width: 1px 0px 0px 1px;
   background: var(--secondary-light);
   ${(props) => props.slideup && "transform: translateY(calc(55%));"}
+  ${space}
 `;
 
 export default StyledCardSlideUp;
