@@ -14,6 +14,9 @@ const StyledCard = styled(Card)`
   min-height: 300px;
   width: 20%;
   height: 40%;
+  box-shadow: calc(-1 * var(--drop-shadow-amount)) var(--drop-shadow-amount) 0px
+    var(--secondary-dark);
+  ${(props) => !props.shadow && "box-shadow: none;"}
   border: 1px solid var(--text-color-dark);
   overflow: hidden;
   background-color: var(--primary-color);

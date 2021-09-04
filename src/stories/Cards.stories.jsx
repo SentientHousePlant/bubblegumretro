@@ -5,6 +5,10 @@ export default {
   title: "Components/Cards",
 };
 
-export const Main = () => {
+export const Default = () => {
   return <Card>Test</Card>;
+};
+
+export const Shadow = () => {
+  return <Card shadow>Test</Card>;
 };
