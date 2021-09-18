@@ -24,7 +24,9 @@ const SlideTemplate = (args) => (
 const UpperLowerTemplate = (args) => (
   <div style={{ width: "700px", height: "700px" }}>
     <Card {...args}>
-      <CardSection height={"40%"}>Part 1</CardSection>
+      <CardSection height={"40%"} background="cyan">
+        Part 1
+      </CardSection>
       <CardSection height={"60%"} background="red">
         Part 2
       </CardSection>

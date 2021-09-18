@@ -5,7 +5,6 @@ const CardSection = styled.div(background, layout);
 
 CardSection.defaultProps = {
   width: "100%",
-  background: "cyan",
 };
 
 export default CardSection;

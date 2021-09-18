@@ -2,7 +2,7 @@ import BaseButton from "../components/Buttons/BaseButton";
 
 export default {
   component: BaseButton,
-  title: "Components/BaseButton",
+  title: "Components/Buttons",
 };
 
 export const Default = () => (
