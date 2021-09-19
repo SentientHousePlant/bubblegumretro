@@ -22,9 +22,9 @@ export default [
       nodeResolve({
         extensions: [".js", ".jsx"],
       }),
+      external(),
       commonjs(),
       babel({ exclude: "node_modules/**", presets: ["@babel/preset-react"] }),
-      external(),
       terser(),
     ],
   },

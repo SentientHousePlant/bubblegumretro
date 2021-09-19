@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
   :root {
     --primary-color: #FAB3CD;
     --secondary-dark: #6fe1ec58;
@@ -15,9 +16,10 @@ const GlobalStyle = createGlobalStyle`
   }
   * {
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Cutive Mono', monospace;
   font-weight: bold;
   }
+  html {font-size: calc(1em + 1vw);}
 `;
 
 export default GlobalStyle;
