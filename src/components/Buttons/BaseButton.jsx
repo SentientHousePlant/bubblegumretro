@@ -1,15 +1,7 @@
 import styled from "styled-components";
 import { border } from "styled-system";
 
-const RawBaseButton = (props) => {
-  return (
-    <button className={props.className} onClick={props.onClick}>
-      {props.children}
-    </button>
-  );
-};
-
-const StyledBaseButton = styled(RawBaseButton)`
+const StyledBaseButton = styled.button`
   background-color: var(--primary-color);
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;

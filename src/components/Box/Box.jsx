@@ -22,6 +22,7 @@ Box.defaultProps = {
   borderRadius: "var(--border-radius)",
   boxShadow: `calc(-1 * var(--drop-shadow-amount)) var(--drop-shadow-amount) 0px
   var(--secondary-dark)`,
+  overflow: "hidden",
 };
 
 export default Box;
